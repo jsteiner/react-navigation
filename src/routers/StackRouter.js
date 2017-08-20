@@ -205,7 +205,7 @@ export default (
               routeToPush = initChildRoute;
             } else if (navigatedChildRoute !== initChildRoute) {
               // Push the route if the state has changed in response to this navigation
-              routeToPush = navigatedChildRoute;
+              routeToPush = initChildRoute;
             }
             if (routeToPush) {
               return StateUtils.push(state, {
